@@ -14,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { JobTitleCombobox } from './job-title-combobox';
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 
 type FormValues = {
@@ -135,10 +136,16 @@ export function SubmitForm({ locale }: SubmitFormProps) {
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t('jobTitle')} *</label>
-              <input
-                {...register('jobTitle')}
-                placeholder="e.g. Software Engineer"
-                className="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 dark:text-white"
+              <Controller
+                name="jobTitle"
+                control={control}
+                render={({ field }) => (
+                  <JobTitleCombobox
+                    value={field.value ?? ''}
+                    onChange={field.onChange}
+                    error={errors.jobTitle?.message}
+                  />
+                )}
               />
               {errors.jobTitle && <p className="text-xs text-red-500 mt-1">{errors.jobTitle.message}</p>}
             </div>

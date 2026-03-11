@@ -19,9 +19,9 @@ export function Header({ locale }: HeaderProps) {
           <AppLogo size={36} />
           <div className="flex flex-col leading-tight">
             {/* <span className="text-lg font-bold text-[#D4690E]">كام؟</span> */}
-            <span className="hidden sm:block text-[#D4690E] dark:text-[#D4690E] text-l leading-none">
+            {/* <span className="hidden sm:block text-[#D4690E] dark:text-[#D4690E] text-l leading-none">
               Kam Biyakhod?
-            </span>
+            </span> */}
           </div>
         </Link>
 
