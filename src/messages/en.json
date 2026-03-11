@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "title": "Know Your Worth",
+    "subtitle": "Anonymous salary data from real Egyptian professionals",
+    "cta": "Share Your Salary",
+    "totalEntries": "Anonymous Salaries",
+    "avgSalary": "Avg Monthly Salary",
+    "jobTitles": "Job Titles Tracked"
+  },
+  "filters": {
+    "search": "Search job title...",
+    "industry": "Industry",
+    "city": "City",
+    "experience": "Experience",
+    "companySize": "Company Size",
+    "sortBy": "Sort By",
+    "all": "All",
+    "salaryHigh": "Salary: High to Low",
+    "salaryLow": "Salary: Low to High",
+    "mostRecent": "Most Recent",
+    "clearAll": "Clear Filters"
+  },
+  "submit": {
+    "title": "Share Your Salary Anonymously",
+    "privacy": "100% Anonymous. No name, no email, no tracking.",
+    "button": "Submit Anonymously",
+    "success": "Thank you! You're helping thousands negotiate better.",
+    "step1": "Job Details",
+    "step2": "Compensation",
+    "step3": "About You",
+    "next": "Next",
+    "back": "Back",
+    "jobTitle": "Job Title",
+    "industry": "Industry",
+    "companySize": "Company Size",
+    "companyType": "Company Type",
+    "monthlySalary": "Monthly Salary (EGP)",
+    "hasBonus": "I receive a bonus",
+    "hasMedicalInsurance": "I have medical insurance",
+    "yearsExperience": "Years of Experience",
+    "city": "City",
+    "gender": "Gender (optional)",
+    "education": "Education Level (optional)",
+    "rateLimitError": "You can only submit 3 times per 24 hours.",
+    "validationError": "Please fix the errors below.",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "preferNotToSay": "Prefer not to say",
+    "highSchool": "High School",
+    "bachelors": "Bachelor's",
+    "masters": "Master's",
+    "phd": "PhD",
+    "local": "Local Company",
+    "multinational": "Multinational",
+    "government": "Government",
+    "ngo": "NGO",
+    "startup": "Startup (1-50)",
+    "mid": "Mid-size (51-200)",
+    "large": "Large (200+)"
+  },
+  "salary": {
+    "avg": "Average",
+    "median": "Median",
+    "min": "Min",
+    "max": "Max",
+    "perMonth": "EGP/month",
+    "entries": "salaries",
+    "entry": "salary",
+    "viewDetails": "View Details",
+    "shareWhatsApp": "Share on WhatsApp",
+    "distribution": "Salary Distribution",
+    "byExperience": "By Experience",
+    "byCity": "By City",
+    "byCompanySize": "By Company Size"
+  },
+  "nav": {
+    "explore": "Explore Salaries",
+    "submit": "Share Salary",
+    "home": "Home"
+  },
+  "footer": {
+    "tagline": "Know your worth. Share anonymously. Help others negotiate better.",
+    "rights": "All rights reserved.",
+    "privacy": "100% anonymous — no personal data collected."
+  },
+  "empty": {
+    "title": "No salaries found",
+    "subtitle": "Be the first to share a salary for this search.",
+    "cta": "Share Your Salary"
+  },
+  "error": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Not found."
+  }
+}
