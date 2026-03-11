@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { ChevronLeftIcon } from '@radix-ui/react-icons';
+import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { useJobBySlug, useSalariesByJob } from '@/hooks/use-salaries';
 import { useStats } from '@/hooks/use-stats';
@@ -49,8 +49,8 @@ export function JobDetailClient({ locale, slug }: JobDetailClientProps) {
         <Link href={`/${locale}/submit`} className="inline-flex items-center justify-center rounded-lg bg-green-600 px-6 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition-colors">
           🔒 Share Your Salary
         </Link>
-        <Link href={`/${locale}`} className="block text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 mt-4">
-          <ChevronLeftIcon /> Back to Explore
+        <Link href={`/${locale}`} className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 mt-4">
+          <ArrowLeftIcon /> Back to Explore
         </Link>
       </div>
     );
@@ -74,9 +74,9 @@ export function JobDetailClient({ locale, slug }: JobDetailClientProps) {
       {/* Back link */}
       <Link
         href={`/${locale}`}
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 mb-6"
+        className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 mb-6"
       >
-        ← Back to Explore
+        <ArrowLeftIcon /> Back to Explore
       </Link>
 
       {/* Hero */}

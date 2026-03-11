@@ -2,7 +2,8 @@
 import { useState, useTransition, useDeferredValue } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { ChevronRightIcon } from '@radix-ui/react-icons';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
+import Image from 'next/image';
 import { ExploreFilters } from '@/components/salary/explore-filters';
 import { SalaryCard } from '@/components/salary/salary-card';
 import { StatsOverview } from '@/components/salary/stats-overview';
@@ -67,7 +68,8 @@ export function ExploreClient({ locale }: ExploreClientProps) {
       <div className="bg-gradient-to-b from-green-50 to-transparent dark:from-green-950/20 dark:to-transparent border-b border-green-100 dark:border-green-900/30">
         <div className="container mx-auto px-4 pt-12 pb-10 max-w-6xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-green-100 dark:bg-green-900/30 px-4 py-1.5 text-xs font-semibold text-green-700 dark:text-green-400 mb-5 tracking-wide uppercase">
-            🇪🇬 Egypt Salary Data
+            <Image src="/egypt-flag-icon.svg" alt="Egypt" width={18} height={18} className="rounded-sm" />
+            Egypt Salary Data
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-3 tracking-tight">
             {t('title')} <span className="text-green-600">💰</span>
@@ -79,7 +81,7 @@ export function ExploreClient({ locale }: ExploreClientProps) {
             href={`/${locale}/submit`}
             className="inline-flex items-center justify-center rounded-xl bg-green-600 px-7 py-3 text-sm font-semibold text-white hover:bg-green-700 transition-colors shadow-md shadow-green-200 dark:shadow-green-900/30"
           >
-            {t('cta')} <ChevronRightIcon />
+            {t('cta')} <ArrowRightIcon />
           </Link>
         </div>
       </div>

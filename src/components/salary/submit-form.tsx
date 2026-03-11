@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
+import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 
 type FormValues = {
   jobTitle: string;
@@ -83,7 +83,7 @@ export function SubmitForm({ locale }: SubmitFormProps) {
           href={`/${locale}`}
           className="inline-flex items-center justify-center rounded-lg bg-green-600 px-6 py-3 text-sm font-medium text-white hover:bg-green-700 transition-colors mt-4"
         >
-          Explore Salaries <ChevronRightIcon />
+          Explore Salaries <ArrowRightIcon />
         </Link>
       </div>
     );
@@ -320,9 +320,9 @@ export function SubmitForm({ locale }: SubmitFormProps) {
             <button
               type="button"
               onClick={() => setStep(s => s - 1)}
-              className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 dark:border-gray-700 px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             >
-              <ChevronLeftIcon /> {t('back')}
+              <ArrowLeftIcon /> {t('back')}
             </button>
           )}
           {step < 3 ? (
@@ -331,7 +331,7 @@ export function SubmitForm({ locale }: SubmitFormProps) {
               onClick={nextStep}
               className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg bg-green-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition-colors"
             >
-              {t('next')} <ChevronRightIcon />
+              {t('next')} <ArrowRightIcon />
             </button>
           ) : (
             <button

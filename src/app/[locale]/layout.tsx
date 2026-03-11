@@ -10,6 +10,9 @@ import { Footer } from '@/components/layout/footer';
 const locales = ['en', 'ar'];
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.svg',
+  },
   title: {
     default: 'Kam Biyakhod? — كام بياخد؟ | Egypt Salary Explorer',
     template: '%s | Kam Biyakhod?',
